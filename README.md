@@ -5,7 +5,7 @@ KI-Assistent für das Planovo-Handbuch auf Basis von RAG mit n8n, OpenAI-Embeddi
 Das System verwendet n8n Workflows, OpenAI Embeddings und die Qdrant Vektordatenbank, um Fragen zum Planovo-Handbuch zu beantworten.
 Der Assistent durchsucht relevante Inhalte aus dem Handbuch und nutzt diese als Kontext, um eine passende Antwort zu generieren.
 
-rchitektur
+Architektur
 
 Das System arbeitet mit einer Retrieval-Augmented-Generation Pipeline.
 
