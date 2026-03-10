@@ -121,3 +121,27 @@ AI-Support-Agent
 │   └── workflow-ingestion.png
 │
 └── README.md
+
+
+
+
+## Systemübersicht
+
+### Chat Workflow
+
+Der folgende Workflow verarbeitet Benutzerfragen.  
+Die Frage wird in ein Embedding umgewandelt, in Qdrant gesucht und anschließend an den AI Agent übergeben.
+
+![Chat Workflow](docs/workflow-chat.png)
+
+### Datenverarbeitung Workflow
+
+Dieser Workflow liest das Handbuch, erstellt Textabschnitte und generiert Embeddings, die anschließend in Qdrant gespeichert werden.
+
+![Data Workflow](docs/workflow-data.png)
+
+### Qdrant Vector Database
+
+Die Embeddings werden in einer Qdrant Collection gespeichert.
+
+![Qdrant Collection](docs/qdrant-collection.png)
