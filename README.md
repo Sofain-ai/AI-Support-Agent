@@ -2,12 +2,12 @@
 KI-Assistent für das Planovo-Handbuch auf Basis von RAG mit n8n, OpenAI-Embeddings und Qdrant.
 
 
-Das System verwendet n8n Workflows, OpenAI Embeddings und die Qdrant Vektordatenbank, um Fragen zum Planovo-Handbuch zu beantworten.
+- Das System verwendet n8n Workflows, OpenAI Embeddings und die Qdrant Vektordatenbank, um Fragen zum Planovo-Handbuch zu beantworten.
 Der Assistent durchsucht relevante Inhalte aus dem Handbuch und nutzt diese als Kontext, um eine passende Antwort zu generieren.
 
-Architektur
+# Architektur
 
-Das System arbeitet mit einer Retrieval-Augmented-Generation Pipeline.
+- Das System arbeitet mit einer Retrieval-Augmented-Generation Pipeline.
 
 Benutzerfrage
       ↓
@@ -21,9 +21,9 @@ AI Agent (GPT-4)
       ↓
 Generierte Antwort
 
-Workflows
+# Workflows
 
-Das Projekt besteht aus zwei Workflows.
+-- Das Projekt besteht aus zwei Workflows.
 
 1. Datenverarbeitung Workflow
 
@@ -76,7 +76,7 @@ Chat Message → Embedding → Qdrant Search → Kontext → AI Agent → Antwor
 
 
 
-Verwendete Technologien
+# Verwendete Technologien
 
 n8n
 
@@ -90,10 +90,9 @@ JavaScript (n8n Nodes)
 
 
 
-Qdrant starten
+# Qdrant starten
 
 Qdrant wird lokal über Docker gestartet.
-
 
 
 docker run -p 6333:6333 qdrant/qdrant
@@ -106,7 +105,7 @@ Verwendete Collection:
 planovo_handbook
 
 
-Vektorkonfiguration:
+# Vektorkonfiguration:
 Dimension: 1536
 Distance: Cosine
 
